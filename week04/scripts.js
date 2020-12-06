@@ -18,7 +18,7 @@ function checkPasswordLength(){
 let elPassword = document.getElementById("password");
 elPassword.onblur = checkPasswordLength;
 
-function showPasswordLength2(txt){
+function checkPasswordLength2(txt){
     if(txt.length <5){
         alert("Password must be more than 5.");
     }else{
