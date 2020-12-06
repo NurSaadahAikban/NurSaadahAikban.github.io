@@ -27,7 +27,7 @@ function showPasswordLength2(txt){
 }
 
 let elPassword2 = document.getElementById("password2");
-elPassword2.addEventListener("blur", function(){
+elPassword2.addEventListener("blur",function(){
     let a=document.getElementById("password2");
     checkPasswordLength2(a.value);
 });
