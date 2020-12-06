@@ -24,7 +24,6 @@ function showPasswordLength2(txt){
     }else{
         alert("Password accepted.");
     }
-
 }
 
 let elPassword2 = document.getElementById("password2");
