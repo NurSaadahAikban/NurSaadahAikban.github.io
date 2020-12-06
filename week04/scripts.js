@@ -31,3 +31,9 @@ elPassword2.addEventListener("blur",function(){
     let a = document.getElementById("password2");
     checkPasswordLength2(a.value);
 });
+
+let metallicaLink = document.getElementById("metallicaLink");
+metallicalink.addEventListener("click", function(){
+    event.preventDefault();
+    alert(metallicaLink.href);
+});
