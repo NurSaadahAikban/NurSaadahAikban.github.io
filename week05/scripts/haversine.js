@@ -25,10 +25,10 @@ function roundVal(val){
     return result;
 }
 
-function calculateDistance(lat,lon){
-    let d1= haversine(lat,lon, 2.922562, 101.650965);//de pulze,cyberjaya
-    let d2 = haversine(lat, lon, 3.073065, 101.67787);//sunway
-    let d3= haversine(lat, lon, 3.158761, 101.714524);//klcc
+function calculateDistance(lat,long){
+    let d1= haversine(lat,long, 2.922562, 101.650965);//de pulze,cyberjaya
+    let d2 = haversine(lat, long, 3.073065, 101.67787);//sunway
+    let d3= haversine(lat, long, 3.158761, 101.714524);//klcc
 
     return[d1,d2,d3];
 }
@@ -38,7 +38,7 @@ elLocate.addEventListener("click", function(){
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("lat");
-            let elLon = document.getElementById("Lon");
+            let elLong = document.getElementById("long");
             let elDepulze = document.getElementById("depulze");
             let elSunway = document.getElementById("sunway");
             let elKlcc = document.getElementById("klcc");
@@ -46,14 +46,14 @@ elLocate.addEventListener("click", function(){
             let userLat = position.coords.latitude;
             let userLong = position.coords.longitude;
 
-            
+
             let distance = calculateDistance(userLat, userLong);
 
             elLat.innerHTML="User Latitude: " + userLat;
             elLong.innerHTML="User Longitude: "+ userLong;
-            elDepulze.innerHTML="Distance to De Pulze: "+ distance[0];
-            elSunway.innerHTML="Distance to Sunway: "+ distance[1];
-            elKlcc.innerHTML="Distance to KLCC: " + distance[2];
+            elDepulze.innerHTML="Distance to De Pulze, CJ is "+ distance[0];
+            elSunway.innerHTML="Distance to Sunway is "+ distance[1];
+            elKlcc.innerHTML="Distance to KLCC is " + distance[2];
 
         }); 
     }else{
