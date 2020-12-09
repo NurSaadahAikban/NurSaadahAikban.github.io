@@ -48,11 +48,11 @@ elLocate.addEventListener("click", function(){
 
             let distance = calculateDistance(userLat, userLong);
 
-            elLat.innerHTML("User Latitude: " + userLat);
-            elLong.innerHTML("User Longitude: "+ userLong);
-            elDepulze.innerHTML("Distance to De Pulze: "+ distance[0]);
-            elSunway.innerHTML("Distance to Sunway: "+ distance[1]);
-            elKlcc.innerHTML("Distance to KLCC: " + distance[2]);
+            elLat.innerHTML="User Latitude: " + userLat;
+            elLong.innerHTML="User Longitude: "+ userLong;
+            elDepulze.innerHTML="Distance to De Pulze: "+ distance[0];
+            elSunway.innerHTML="Distance to Sunway: "+ distance[1];
+            elKlcc.innerHTML="Distance to KLCC: " + distance[2];
 
         }); 
     }else{
