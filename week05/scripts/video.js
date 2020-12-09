@@ -24,8 +24,13 @@ window.onload = function(){
         let time = video.duration *(seekbar.value /100);
         video.currentTime = time;
     });
-    seekbar.addEventListener("timeupdate", function(){
+    video.addEventListener("timeupdate", function(){
         let value = (100 / video.duration) * video.currentTime;
         seekbar.value=value;
+    });
+
+    let volumecontrol = document.getElementById("volume");
+    volumecontrol.addEventListener("change", function(){
+        video.volume = volumecontrol.value;
     });
 }
