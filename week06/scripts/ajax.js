@@ -13,6 +13,8 @@ function getRandomUser(){
             let elEmail = document.getElementById("email");
 
             elFname.innerHTML = data.results[0].name.first;
+            elUserimg.src = data.results[0].picture.large;
+            elUserimg.title = data.results[0].name.first +" "+data.results[0].name.last;
 
             elJsonResult.innerHTML=this.response;
         }
