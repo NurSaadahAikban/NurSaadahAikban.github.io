@@ -15,6 +15,14 @@ function getRandomUser(){
             elFname.innerHTML = data.results[0].name.first;
             elUserimg.src = data.results[0].picture.large;
             elUserimg.title = data.results[0].name.first +" "+data.results[0].name.last;
+            elLname.innerHTML = data.results[0].name.last;
+            elPhone.innerHTML = data.results[0].phone;
+            elAddr.innerHTML=data.results[0].location.street.number+ " "
+            +data.results[0].location.street.name+ ", <br>"
+            +data.results[0].location.poscode + " "
+            +data.results[0].location.city+", <br>"
+            +data.results[0].location.country;
+            elEmail.innerHTML = data.results[0].email;
 
             elJsonResult.innerHTML=this.response;
         }
