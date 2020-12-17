@@ -38,3 +38,15 @@ let app4= new Vue({
         ]
     }
 });
+
+let app5 = new Vue({
+    el:"#app5",
+    data: {
+        message:"Saadah Aikban"
+    },
+    methods:{
+        reverseMessage: function(){
+            this.message = this.message.split("").reverse().join("");
+        }
+    }
+});
