@@ -5,7 +5,7 @@ function GetBookings(){
     .then(json => {
       // Do something with the data
       console.log(json.bookings);
-      let bookingList = getElementById("bookingList");
+      let bookingList = document.getElementById("bookingList");
       bookingList.innerHTML =" ";
       for(let x=0; x<json.bookings.length;x++){
           let gName = json.bookings[x].name;
