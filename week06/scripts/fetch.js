@@ -14,7 +14,7 @@ function GetBookings(){
           let gId = json.bookings[x].id;
 
           bookingList.innerHTML += gId + "-" + gName + ", "+
-          gEmail + ", pax:" + pax + "<br>"; 
+          gEmail + ", gPax:" + pax + "<br>"; 
       }
     
     }); 
