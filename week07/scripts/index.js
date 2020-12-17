@@ -8,7 +8,7 @@ var app=new Vue({
 let app2 = new Vue({
     el:"#app2",
     data:{
-        message: "Your loaded this page on "+ new Data().toLocaleString()
+        message: "Your loaded this page on "+ new Date().toLocaleString()
 
 
     }
