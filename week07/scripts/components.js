@@ -14,7 +14,7 @@ let app7 = new Vue({
                 text:"Vegetables"
             },
             {
-                id=1,
+                id:1,
                 text:"Cheese"
             },
             {
