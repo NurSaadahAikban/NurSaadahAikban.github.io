@@ -7,6 +7,12 @@ function GetBookings(){
       console.log(json.bookings);
       let bookingList = document.getElementById("bookingList");
       bookingList.innerHTML =" ";
+
+      let jsonDiv = document.getElementById("json");
+      jsonDiv.innerHTML ="";
+      jsonDiv.innerHTML = json.bookings;
+
+
       for(let x=0; x<json.bookings.length;x++){
           let gName = json.bookings[x].name;
           let gEmail = json.bookings[x].email;
