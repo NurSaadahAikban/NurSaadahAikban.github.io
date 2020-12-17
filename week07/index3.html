@@ -10,18 +10,18 @@
     <div id="app">
         {{message}}
     </div>
-
+    <!--when we go to the line there will be appear the text-->
     <div id="app2">
         <span v-bind:title="message">
             Hover your mouse over me for a few seconds to see the title!
         </span>
         <a v-bind:href="linkURL" target="_blank">{{linkText}}</a>
     </div>
-
+    <!--hide or not the text-->
     <div id="app3">
         <span v-if="seen">Now you see me</span>
     </div>
-
+    <!--order list-->
     <div id="app4">
         <ol>
             <li v-for="todo in todos">
@@ -29,7 +29,7 @@
             </li>
         </ol>
     </div>
-
+    <!--reversing text-->
     <div id="app5">
         <p>{{message}}</p>
         <button v-on:click="reverseMessage">
@@ -37,6 +37,7 @@
         </button>
     </div>
 
+    <!--binding-->
     <div id="app6">
         <p>{{message}}</p>
         <input v-model="message">
