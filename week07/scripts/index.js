@@ -4,3 +4,12 @@ var app=new Vue({
         message: "Hello World"
     }
 });
+
+let app2 = new Vue({
+    el:"#app2",
+    data:{
+        message: "Your loaded this page on "+ new Data().toLocaleString()
+
+
+    }
+});
