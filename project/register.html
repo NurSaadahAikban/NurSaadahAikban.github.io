@@ -1,0 +1,135 @@
+<html>
+	<head>
+	
+		<style>
+			.signup{
+				margin-bottom:150px;
+			}
+			
+			.content{
+				@extend display-flex;
+				padding: 75px 0;
+				//flex-flow:wrap;
+			}
+			
+			.form{
+				
+				overflow:hidden;
+				margin-left:75px;
+				margin-right:75px;
+				padding-left:34px;
+			}
+			
+			.title{
+				margin-bottom: 33px;
+				font-family: Comic Sans MS;
+				text-align: center;
+				color: rgb(221, 73, 98);
+			}
+			
+			.reg-form{
+				width:100%;
+			}
+			
+			.label-input{
+				position:relative;
+				margin-bottom:25px;
+				overflow: hidden;
+				&:last-child{
+					margin-bottom:0px;
+				}
+			}			
+		
+			input{
+				width:100%;
+				display:"block";
+				border:none;
+				border-bottom: 1px solid rgb(255, 172, 172);
+				padding:6px 10px;
+				font-family: "Comic Sans MS";
+				box-sizing:border-box;
+				@include input-placeholder ($gray);
+				&:focus{
+					border-bottom: 1px solid $black-color;
+					@include input-placeholder($black-color);
+				}				
+			}
+			
+			.register-button{
+				display:inline-block;
+				background-color: rgb(182, 45, 68) ;
+				color:#fff;
+				border-bottom:none;
+				width:auto;
+				padding: 15px 39px;
+				@include border-radius(5px);
+				margin-top:25px;
+				cursor:pointer;
+				$:hover{
+					background:darken(orange,10%);
+				}
+			}		
+				
+			.text-link{
+				font-size:14px;
+				color:$black-color;
+				display:block;
+				text-align:center;				
+			}
+			.table-form{			
+				border: 1px solid rgb(228, 165, 173);
+				margin-left: auto;
+				margin-right: auto;
+				box-shadow: 10px 10px 5px rgb(238, 141, 157);			
+			}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<section class="signup">	
+				<div class="container">
+					<div class="content">
+						<div class="form">
+							<h2 class="title">Sign Up</h2>
+							<table class="table-form"> 
+								<tr>
+									<th>
+										<form method="POST" class="reg-form" id="reg-form">
+											<div class="label-input">
+												<label for="username">
+												<input type="text" name="username" id="username" placeholder="Username" />
+											</div>
+											<div class="label-input">
+												<label for="email">
+												<input type="email" name="email" id="email" placeholder="Email" />
+											</div>
+											<div class="label-input">
+												<label for="password">
+												<input type="password" name="password" id="password" placeholder="Password" />
+											</div>
+											<div class="label-input">
+												<label for="conpassword">
+												<input type="password" name="conpassword" id="conpassword" placeholder="Confirm Password"/>
+											</div>
+											<div class="label-input form-button">
+												<input type="submit" name="register" id="register" class="register-button" value="Register"/>
+											</div>
+										</form>	
+									</th>
+									<th>
+										<img src="https://i.ibb.co/HF0tXTP/tulip.jpg" alt="daisy" border="0">
+									</th>
+								</tr>	
+							</table>
+
+						</div>
+									
+					</div>
+				</div>	
+			</section>
+		</div>
+		<script src ="regscript.js"></script>
+	</body>
+</html>
