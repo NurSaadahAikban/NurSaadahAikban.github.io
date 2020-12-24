@@ -33,7 +33,7 @@ function GetBookings(){
       //and later attach click event to all button
       for(let j=0; j< bookingIds.length;j++){
           let el = document.getElementById(bookingIds[j]);
-          le.addEventListener("click", function(){
+          el.addEventListener("click", function(){
                 let theId = bookingIds[j].replace("delete","");
                 //to check
                 alert(theId);
