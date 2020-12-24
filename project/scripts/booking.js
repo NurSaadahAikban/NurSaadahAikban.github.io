@@ -3,22 +3,22 @@ function Booknow(gname, gemail, ghome, gmobile,gaddress1,gaddress2,gcity,gstate,
     let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
     let body = {
     booking: {
-      name = gname,
-      email= gemail,
-      home=ghome,
-      mobile=gmobile,
-      address1 =gaddress1,
-      address2 = gaddress2,
-      city = gcity,
-      state = gstate,
-      poscode = gposcode,
-      caketype = gcaketype,
-      flavour = gflavour,
-      filling= gfilling,
-      topping =gtopping,
-      numberoforder = gnumberoforder,
-      datetosend = gdatetosend,
-      notes = gnotes
+      name : gname,
+      email: gemail,
+      home:ghome,
+      mobile:gmobile,
+      address1 :gaddress1,
+      address2 : gaddress2,
+      city : gcity,
+      state : gstate,
+      poscode : gposcode,
+      caketype : gcaketype,
+      flavour : gflavour,
+      filling : gfilling,
+      topping : gtopping,
+      numberoforder : gnumberoforder,
+      datetosend : gdatetosend,
+      notes : gnotes
     }
   }
   fetch(url, {
