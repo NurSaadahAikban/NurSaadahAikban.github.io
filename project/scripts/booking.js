@@ -1,5 +1,4 @@
-function Booknow(gname, gemail, ghome, gmobile,gaddress1,gaddress2,gcity,gstate,gposcode,
-    gcaketype,gflavour,gfilling,gtopping,gnumberoforder,gdatetosend,gnotes){
+function Booknow(gname, gemail, ghome, gmobile,gaddress1,gaddress2,gcity,gstate,gposcode,gcaketype,gflavour,gfilling,gtopping,gnumberoforder,gdatetosend,gnotes){
     let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
     let body = {
     booking: {
@@ -53,7 +52,6 @@ window.addEventListener("load", function(){
         let userdatetosend = document.getElementById("userdatetosend").value;
         let usernotes = document.getElementById("usernotes").value;
 
-        Booknow(username,useremail,userhome,usermobile,useraddress1, useraddress2,userstate,usercity,userposcode,
-            usercaketype,userflavour,userfilling,usertopping,usernumberoforder,userdatetosend,usernotes);
+        Booknow(username,useremail,userhome,usermobile,useraddress1, useraddress2,userstate,usercity,userposcode, usercaketype,userflavour,userfilling,usertopping,usernumberoforder,userdatetosend,usernotes);
     });
 });
