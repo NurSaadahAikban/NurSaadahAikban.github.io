@@ -8,6 +8,11 @@ function GetBookings(){
       let bookingList = document.getElementById("booking-list");
       let bookingIds =[];
 
+      //clear the table rows
+      for(let k=bookingList.rows.length -1; k>0;k--){
+          bookingList.deleteRow(k);
+      }
+
       for(let x=0; x<json.bookings.length;x++){
           let gName = json.bookings[x].name;
           let gEmail = json.bookings[x].email;
@@ -55,6 +60,6 @@ function DeleteBooking(id){
       method: 'DELETE',
     })
       .then((response) => {
-          location.reload();
+        GetBookings();
       });  
   }
