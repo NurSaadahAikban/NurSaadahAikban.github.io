@@ -5,7 +5,7 @@ function Booknow(guestname, guestemail,guestpax,guestremarks){
         name:guestname,
         email:guestemail,
         pax:guestpax,
-        remark:guestremarks
+        remarks:guestremarks
       }
     }
     fetch(url, {
