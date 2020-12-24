@@ -36,24 +36,24 @@ function Booknow(gname, gemail, ghome, gmobile,gaddress1,gaddress2,gcity,gstate,
 
 window.addEventListener("load", function(){
     document.getElementById("bookNow").addEventListener("click", function(){
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let home = document.getElementById("home").value;
-        let mobile = document.getElementById("mobile").value;
-        let address1 = document.getElementById("address1").value;
-        let address2 = document.getElementById("address2").value;
-        let state = document.getElementById("state").value;
-        let city = document.getElementById("city").value;
-        let poscode = document.getElementById("poscode").value;
-        let caketype = document.getElementById("caketype").value;
-        let flavour = document.getElementById("flavour").value;
-        let filling = document.getElementById("filling").value;
-        let topping = document.getElementById("topping").value;
-        let numberoforder = document.getElementById("numberoforder").value;
-        let datetosend = document.getElementById("datetosend").value;
-        let notes = document.getElementById("notes").value;
+        let username = document.getElementById("username").value;
+        let useremail = document.getElementById("useremail").value;
+        let userhome = document.getElementById("userhome").value;
+        let usermobile = document.getElementById("usermobile").value;
+        let useraddress1 = document.getElementById("useraddress1").value;
+        let useraddress2 = document.getElementById("useraddress2").value;
+        let userstate = document.getElementById("userstate").value;
+        let usercity = document.getElementById("usercity").value;
+        let userposcode = document.getElementById("userposcode").value;
+        let usercaketype = document.getElementById("usercaketype").value;
+        let userflavour = document.getElementById("userflavour").value;
+        let userfilling = document.getElementById("userfilling").value;
+        let usertopping = document.getElementById("usertopping").value;
+        let usernumberoforder = document.getElementById("usernumberoforder").value;
+        let userdatetosend = document.getElementById("userdatetosend").value;
+        let usernotes = document.getElementById("usernotes").value;
 
-        Booknow(name,email,home,mobile,address1, address2,state,city,poscode,
-            caketype,flavour,filling,topping,numberoforder,datetosend,notes);
+        Booknow(username,useremail,userhome,usermobile,useraddress1, useraddress2,userstate,usercity,userposcode,
+            usercaketype,userflavour,userfilling,usertopping,usernumberoforder,userdatetosend,usernotes);
     });
 });
