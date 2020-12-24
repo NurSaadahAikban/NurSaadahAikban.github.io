@@ -56,6 +56,5 @@ function DeleteBooking(id){
     })
       .then((response) => {
           location.reload();
-      });
-  
+      });  
   }
