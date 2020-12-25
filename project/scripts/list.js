@@ -24,8 +24,7 @@ function GetBookings(){
           //specify what to put in cell
           row.insertCell(0).innerHTML = gcaketype;
           row.insertCell(1).innerHTML = gquantity;
-          row.insertCell(2).innerHTML = gEmail;          
-          row.insertCell(3).innerHTML = "<button id='" + buttonId + "' class 'btn btn-danger'>Delete</button>";
+          row.insertCell(2).innerHTML = "<button id='" + buttonId + "' class 'btn btn-danger'>Delete</button>";
         
           //push all buttonid in 1 array
           bookingIds.push(buttonId);
