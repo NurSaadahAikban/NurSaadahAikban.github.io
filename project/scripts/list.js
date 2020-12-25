@@ -1,6 +1,9 @@
 function GetBookings(){
     
     let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
+    //api info
+
+    
     fetch(url)
     .then((response) => response.json())
     .then(json => {
@@ -18,17 +21,16 @@ function GetBookings(){
           let ginfo = "Type of Cake: "+json.bookings[x].caketype + "<br>Flavour: " + json.bookings[x].flavour + 
           "<br>Filling: "+ json.bookings[x].filling+"<br>Topping: "+json.bookings[x].topping +"<br>Notes: "+ 
           json.bookings[x].notes +"<br>Requested Date To Send: " + json.bookings[x].datetosend ;
-
           let gquantity = json.bookings[x].quantity;
           let gId = json.bookings[x].id;
           let buttonId = "delete" + gId;//activate delete button
-
           let row = bookingList.insertRow(bookingList.rows.length);
 
           //specify what to put in cell
           row.insertCell(0).innerHTML = ginfo;
           row.insertCell(1).innerHTML = gquantity;
-          row.insertCell(2).innerHTML = "<button id='" + buttonId + "' class='btn btn-secondary'>Delete</button>";
+          row.insertCell(2).innerHTML = gquantity;
+          row.insertCell(3).innerHTML = "<button id='" + buttonId + "' class='btn btn-secondary'>Delete</button>";
         
           //push all buttonid in 1 array
           bookingIds.push(buttonId);
