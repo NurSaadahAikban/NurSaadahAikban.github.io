@@ -1,50 +1,18 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>NSA Bake Collection - Products</title>
-    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"  
-        	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-		<style>
-			.signup{
-				margin-bottom:150px;
-			}
-			
-			.content{
-				@extend display-flex;
-				padding: 75px 0;
-				//flex-flow:wrap;
-			}
-			
-			.form{
-				
-				overflow:hidden;
-				margin-left:75px;
-				margin-right:75px;
-				padding-left:34px;
-			}
-			
-			.title{
-				margin-bottom: 33px;
-				font-family: Comic Sans MS;
-				text-align: center;
-				color: rgb(221, 73, 98);
-			}
-			
-			.reg-form{
-				width:100%;
-			}
-			
-			.label-input{
-				position:relative;
-				margin-bottom:25px;
-				overflow: hidden;
-				&:last-child{
-					margin-bottom:0px;
-				}
-			}			
-		
-			input{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSA Bake Collection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"  
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        .title{
+          font-family: Comic Sans MS;
+        }
+        
+        input{
+            
 				width:100%;
 				display:"block";
 				border:none;
@@ -58,8 +26,36 @@
 					@include input-placeholder($black-color);
 				}				
 			}
+
+            .label-input{
+				position:relative;
+				margin-bottom:25px;
+				overflow: hidden;
+				&:last-child{
+					margin-bottom:0px;
+				}
+			}	
+            .form{				
+				overflow:hidden;
+				margin-left:75px;
+				margin-right:75px;
+				padding-left:34px;
+			}
+           
+
+            .title-reg{
+				margin-bottom: 33px;
+				font-family: Comic Sans MS;
+				text-align: center;
+				color: rgb(221, 73, 98);
+			}
 			
-			.register-button{
+			.content{
+				@extend display-flex;
+				padding: 75px 0;
+				//flex-flow:wrap;
+			}
+            .register-button{
 				display:inline-block;
 				background-color: rgb(182, 45, 68) ;
 				color:#fff;
@@ -72,11 +68,11 @@
 				$:hover{
 					background:darken(orange,10%);
 				}
-			}		
-				
-			.text-link{
+			}
+
+            .text-link{
 				font-size:14px;
-				color:$black-color;
+				color:black;
 				display:block;
 				text-align:center;				
 			}
@@ -85,87 +81,88 @@
 				margin-left: auto;
 				margin-right: auto;
 				box-shadow: 10px 10px 5px rgb(238, 141, 157);			
-			}		
-		</style>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<!-- hv to declare row and col after declare container-->
-			<!--Navbar-->
-			<div class="row">
-				<div class="col">
-				  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-					  <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
-					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					  </button>              
-					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-						  <li class="nav-item ">
-							<a class="nav-link" href="product.html">Home </a>
-						  </li>
-						  <li class="nav-item ">
-							<a class="nav-link" href="about.html">About </a>
-						  </li>
-						  <li class="nav-item active">
-							<a class="nav-link" href="booking.html">Booking Slot </a>
-						  </li>    
-						  <li class="nav-item ">
-							<a class="nav-link" href="list.html"> Carts </a>
-						  </li> 
-						  <form class="d-flex">
-							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							  <li class="nav-item">
-								<a class="nav-link " aria-current="page" href="login.html">Login</a>
-							  </li>
-							  <li class="nav-item ">
-								<a class="nav-link" aria-current="page" href="register.html">Register</a>
-							  </li>    
-							</ul>                
-						  </form>		                  
-					  </div>                
-					</nav> 
-										
-				</div>
-			</div>
-			<div class="main">
-				<section class="signup">	
-					<div class="container">
-						<div class="content">
-							<div class="form">
-								<h2 class="title">Sign Up</h2>
-								<table class="table-form" id> 
-									<tr>
-										<th>
-												<div class="label-input">
-													<label for="name">
-													<input type="text" name="username" id="name" placeholder="Username" />
-												</div>
-												<div class="label-input">
-													<label for="email">
-													<input type="email" name="email" id="email" placeholder="Email" />
-												</div>
-												<div class="label-input">
-													<label for="password">
-													<input type="password" name="password" id="password" placeholder="Password" />
-												</div>
-												
-												<div class="label-input form-button">
-													<input type="submit" name="register" id="register" class="register-button" value="Register"/>
-												</div>
-										</th>
-										<th>
-											<img src="https://i.ibb.co/HF0tXTP/tulip.jpg" alt="daisy" border="0">
-										</th>
-									</tr>	
-								</table>
-							</div>									
-						</div>
-					</div>	
-				</section>
-			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- hv to declare row and col after declare container-->
+        <!--Navbar-->
+        <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>              
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item ">
+                        <a class="nav-link" href="product.html">Home </a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About </a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="booking.html">Booking Slot </a>
+                      </li>    
+                      <li class="nav-item ">
+                        <a class="nav-link" href="list.html"> Carts </a>
+                      </li> 
+                      <form class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="login.html">Login</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="register.html">Register</a>
+                          </li>    
+                        </ul>                
+                      </form>		                  
+                  </div>                
+                </nav>                                     
+            </div>
+        </div>
+
+        <div class="main">
+            <section class="signup">	
+                <div class="container">
+                    <div class="content">
+                        <div class="form">
+                            <h2 class="title-reg">Sign Up</h2>
+                            <table class="table-form" id> 
+                                <tr>
+                                    <th>
+                                            <div class="label-input">
+                                                <label for="name">
+                                                <input type="text" name="username" id="name" placeholder="Username" />
+                                            </div>
+                                            <div class="label-input">
+                                                <label for="email">
+                                                <input type="email" name="email" id="email" placeholder="Email" />
+                                            </div>
+                                            <div class="label-input">
+                                                <label for="password">
+                                                <input type="password" name="password" id="password" placeholder="Password" />
+                                            </div>
+                                            
+                                            <div class="label-input form-button">
+                                                <input type="submit" name="register" id="register" class="register-button" value="Register"/>
+                                            </div>
+                                    </th>
+                                    <th>
+                                        <img src="https://i.ibb.co/HF0tXTP/tulip.jpg" alt="daisy" border="0">
+                                    </th>
+                                </tr>	
+                            </table>
+                        </div>									
+                    </div>
+                </div>	
+            </section>
+        </div>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
