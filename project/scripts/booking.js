@@ -1,5 +1,5 @@
 function Booknow(gname, gemail,ghome, gmobile,gaddress1,gaddress2,gcity,gstate,gposcode,
-  gcaketype,gflavour,gfilling,gtopping,gnumberoforder,gdatetosend,gnotes){
+  gcaketype,gflavour,gfilling,gtopping,gquantity,gdatetosend,gnotes){
   let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
   //let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/bookingApp/bookings';
 
@@ -18,7 +18,7 @@ function Booknow(gname, gemail,ghome, gmobile,gaddress1,gaddress2,gcity,gstate,g
       flavour : gflavour,
       filling : gfilling,
       topping : gtopping,
-      numberoforder : gnumberoforder,
+      quantity : gquantity,
       datetosend : gdatetosend,
       notes : gnotes
     }
@@ -51,12 +51,12 @@ window.addEventListener("load", function(){
       let flavour = document.getElementById("flavour").value;
       let filling = document.getElementById("filling").value;
       let topping = document.getElementById("topping").value;
-      let numberoforder = document.getElementById("numberoforder").value;
+      let quantity = document.getElementById("quantity").value;
       let datetosend = document.getElementById("datetosend").value;
       let notes = document.getElementById("notes").value;
 
       Booknow(name,email,home,mobile,address1, address2,state,city,poscode, 
-        caketype,flavour,filling,topping,numberoforder,datetosend,notes);
+        caketype,flavour,filling,topping,quantity,datetosend,notes);
 
     });
 });
