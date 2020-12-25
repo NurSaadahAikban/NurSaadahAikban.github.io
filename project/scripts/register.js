@@ -1,15 +1,15 @@
 function checkUsernameLength(){
-    let username = document.getElementById("username").value;
+    let name = document.getElementById("name").value;
 
-    if(username.length > 20){
+    if(name.length > 20){
         alert("Oh no. Your username is more than 20 words. Please create new username using less than 20 words. Thank you.");
     }    
     else{
         alert("Your username is valid.");
     }    
 }
-let elUsername = document.getElementById("username");
-elUsername.onblur = checkUsernameLength;
+let elName = document.getElementById("name");
+elName.onblur = checkUsernameLength;
 
 //how to check the email have mistype of @mail.com/ or not
 
@@ -39,13 +39,13 @@ elPassword.addEventListener("blur", function(){
     //}
 //}
 
-let elConpassword = document.getElementById("conpassword");
-elConpassword.onblur = checkPasswordMatch;
+//let elConpassword = document.getElementById("conpassword");
+//elConpassword.onblur = checkPasswordMatch;
 
 
 //x siap sbb sheety.co problem
 function Register(gname, gemail,gpassword){
-    let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
+    //let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
     //let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/bookingApp/bookings';
   
     let body = {
