@@ -1,6 +1,6 @@
 function GetMember(){
     
-    let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/memberNsa/members';
+    let url = 'https://api.sheety.co/7b9172ba5421780439c0e82967bca59f/nsaProject/members';
     
     fetch(url)
     .then((response) => response.json())

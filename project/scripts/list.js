@@ -1,9 +1,7 @@
 function GetBookings(){
     
-    let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
-    //api info
-
-    
+  let url = 'https://api.sheety.co/7b9172ba5421780439c0e82967bca59f/nsaProject/bookings';
+   
     fetch(url)
     .then((response) => response.json())
     .then(json => {
