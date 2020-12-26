@@ -4,26 +4,22 @@ function transformUpperCase(){
   let address=document.getElementById("address");
   let city =document.getElementById("city");
   let state = document.getElementById("state");
-  let poscode = document.getElementById("poscode");
-
+ 
   name.value = name.value.toUpperCase();
   address.value = address.value.toUpperCase();
   city.value = city.value.toUpperCase();
   state.value = state.value.toUpperCase();
-  poscode.value = poscode.value.toUpperCase();
 }
 
 let elName = document.getElementById("name");
 let elAddress = document.getElementById("address");
 let elCity = document.getElementById("city");
 let elState = document.getElementById("state");
-let elPoscode = document.getElementById("poscode");
 
 elName.addEventListener("keyup",transformUpperCase);
 elAddress.addEventListener("keyup",transformUpperCase);
 elCity.addEventListener("keyup",transformUpperCase);
 elState.addEventListener("keyup",transformUpperCase);
-elPoscode.addEventListener("keyup",transformUpperCase);
 
 //check length of mobile number
 function checkMobileLength(){
@@ -38,6 +34,18 @@ function checkMobileLength(){
 let elPhone = document.getElementById("phone");
 elPhone.onblur = checkMobileLength;
 
+//check length of mobile number
+function checkPoscodeLength(){
+  let poscode = document.getElementById("poscode").value;
+  if(poscode.length <10){
+    alert("Your poscode is less than 5 digit.");
+  }
+  else if(poscode.length > 11){
+    alert("Your poscode is more than 5 digits");
+  }  
+}
+let elPoscode = document.getElementById("poscode");
+elPoscode.onblur = checkPoscodeLength;
 
 //fetch
 function Register(gname, gemail,gphone,gaddress,gcity,gstate,gposcode){
