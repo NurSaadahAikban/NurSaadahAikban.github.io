@@ -34,7 +34,7 @@ function checkMobileLength(){
 let elPhone = document.getElementById("phone");
 elPhone.onblur = checkMobileLength;
 
-//check length of mobile number
+//check length of poscode number
 function checkPoscodeLength(){
   let poscode = document.getElementById("poscode").value;
   if(poscode.length <5){

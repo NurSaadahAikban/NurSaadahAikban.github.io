@@ -25,11 +25,6 @@ function GetMember(){
 
 window.addEventListener("load", function(){
     document.getElementById("membership").addEventListener("click", function(){
-      if(GetMember() == null){
-        alert("Sorry. You are not a member yet.");
-      }
-      else{
-        GetMember();
-      }
+      GetMember();
     });    
 })
