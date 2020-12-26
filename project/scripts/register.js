@@ -11,48 +11,18 @@ function checkUsernameLength(){
 let elName = document.getElementById("name");
 elName.onblur = checkUsernameLength;
 
-//how to check the email have mistype of @mail.com/ or not
-
-function checkPasswordLength(txt){
-    if(txt.length < 10){
-        alert("Your password is not strong enough. Make it more than 10 to make it strong.");
-    }
-    else{
-        alert("Your password is strong.");
-    }
-}
-let elPassword = document.getElementById("password");
-elPassword.addEventListener("blur", function(){
-    let a = document.getElementById("password");
-    checkPasswordLength(a.value);
-});
-
-//matching it not working
-//function checkPasswordMatch(elPassword){
-    //let conpassword = document.getElementById("conpassword").value;
-
-    //if(conpassword != elPassword){
-        //alert("Your password is not match! Please try again.");
-    //}
-    //else{
-        //alert("Your password is match.");
-    //}
-//}
-
-//let elConpassword = document.getElementById("conpassword");
-//elConpassword.onblur = checkPasswordMatch;
-
-
 //x siap sbb sheety.co problem
-function Register(gname, gemail,gpassword){
-    //let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/nsa/bookings';
-    //let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/bookingApp/bookings';
-  
-    let body = {
-      member: {
+function Register(gname, gemail,gphone,gaddress,gcity,gstate,gposcode){
+  let url = 'https://api.sheety.co/e074bea20583dc3b71f7c5f6b29b9973/memberNsa/members';
+  let body = {
+    member: {
         name:gname,
         email:gemail,
-        password : gpassword
+        phone: gphone,
+        address:gaddress,
+        city:gcity,
+        state:gstate,
+        poscode:gposcode
       }
     }
     fetch(url, {
@@ -64,7 +34,7 @@ function Register(gname, gemail,gpassword){
     })
     .then((response) => response.json())
     .then(json => {        
-        alert(json.member.name + " added");        
+        alert("Congratulation, " + json.member.name + ". You are successfully added in members.");        
       });
   }
   
@@ -72,10 +42,13 @@ function Register(gname, gemail,gpassword){
       document.getElementById("register").addEventListener("click", function(){
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
-
+        let phone = document.getElementById("phone").value;
+        let address = document.getElementById("address").value;
+        let city = document.getElementById("city").value;
+        let state = document.getElementById("state").value;
+        let poscode = document.getElementById("poscode").value;
   
-        Register(name,email,password);
+        Register(name,email,phone,address,city,state,poscode);
   
       });
     });
