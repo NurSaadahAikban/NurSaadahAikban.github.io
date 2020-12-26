@@ -9,7 +9,7 @@
     <style>
 
       footer{
-        background-color:rgb(236, 143, 159);;
+        background-color:rgb(231, 231, 152);;
       }
       .title{
         font-family: Comic Sans MS;
@@ -76,7 +76,7 @@
 
             .text-link{
 				font-size:14px;
-				color:black;
+				color:rgb(219, 211, 211);
 				display:block;
 				text-align:center;				
 			}
@@ -86,6 +86,15 @@
 				margin-right: auto;
 				box-shadow: 10px 10px 5px rgb(238, 141, 157);			
 			}
+            .jumbotron{
+                margin-top: 20px;
+                background-image: url("https://i.ibb.co/WvQzZ2j/daffodil.png");
+                background-repeat: no-repeat;
+                background-color: white;
+                background-position-x: right;
+                background-size: 200px;
+                border:1px solid rgb(231, 231, 152);
+            }
     </style>
 </head>
 <body>
@@ -112,73 +121,55 @@
                       </li>    
                       <li class="nav-item ">
                         <a class="nav-link" href="list.html"> Carts </a>
-                      </li> 
-                      <form class="d-flex">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="login.html">Login</a>
-                          </li>
-                          <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="register.html">Register</a>
-                          </li>    
-                        </ul>                
+                      </li>                       
+                      <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="register.html">Membership</a>
+                      </li>      
+                                      
                       </form>		                  
                   </div>                
                 </nav>                                     
             </div>
         </div>
 
-        <div class="main">
-            <section class="signup">	
-                <div class="container">
-                    <div class="content">
-                        <div class="form">
-                            <h2 class="title-reg">Sign Up</h2>
-                            <table class="table-form" id> 
-                                <tr>
-                                    <th>
-                                            <div class="label-input">
-                                                <label for="name">
-                                                <input type="text" name="username" id="name" placeholder="Username" />
-                                            </div>
-                                            <div class="label-input">
-                                              <label for="email">
-                                              <input type="email" name="email" id="email" placeholder="Email" />
-                                          </div>
-                                            <div class="label-input">
-                                                <label for="phone">
-                                                <input type="text" name="phone" id="phone" placeholder="Mobile" />
-                                            </div>
-                                            <div class="label-input">
-                                                <label for="address">
-                                                <input type="text" name="address" id="address" placeholder="Address" />
-                                            </div>
-                                            <div class="label-input">
-                                              <label for="city">
-                                              <input type="text" name="city" id="city" placeholder="City" />
-                                            </div>
-                                            <div class="label-input">
-                                              <label for="state">
-                                              <input type="text" name="state" id="state" placeholder="State" />
-                                            </div>
-                                            <div class="label-input">
-                                              <label for="poscode">
-                                              <input type="text" name="poscode" id="poscode" placeholder="Poscode" />
-                                            </div>
-                                            
-                                            <div class="label-input form-button">
-                                                <input type="submit" name="register" id="register" class="register-button" value="Register"/>
-                                            </div>
-                                    </th>
-                                    <th>
-                                        <img src="https://i.ibb.co/HF0tXTP/tulip.jpg" alt="daisy" border="0">
-                                    </th>
-                                </tr>	
-                            </table>
-                        </div>									
-                    </div>
-                </div>	
-            </section>
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">                    
+                    <h1 class="display-4">Be One of Our Member Now!</h1>
+                    <p class="lead"></p>
+                    <hr class="my-4">
+                        <small id="contacthelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+                        <div class="form-group">                            
+                            <input type="text" class="form-control" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="phone" placeholder="Mobile">
+                          </div>   
+                        </div>
+
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="address" placeholder="Address">
+                        </div>                        
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="city" placeholder="City">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="state" placeholder="State">
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="poscode" placeholder="poscode">
+                          </div>
+                        </div>                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="member" name="member">Join</button>
+                  </div>
+            
+            </div>
         </div>
     </div>
 
