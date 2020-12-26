@@ -19,19 +19,12 @@ function GetMember(){
 
             //specify what to put in cell
             row.insertCell(0).innerHTML = userinfo;
-            
-            
         }      
     }); 
 }
 
 window.addEventListener("load", function(){
     document.getElementById("membership").addEventListener("click", function(){
-        if(GetMember() == null){
-            alert("Sorry, you are not a member yet.");            
-        }
-        else{
-            GetMember();
-        }
+      GetMember();
     });    
 })

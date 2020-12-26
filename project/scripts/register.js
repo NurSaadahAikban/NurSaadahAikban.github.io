@@ -37,10 +37,10 @@ elPhone.onblur = checkMobileLength;
 //check length of mobile number
 function checkPoscodeLength(){
   let poscode = document.getElementById("poscode").value;
-  if(poscode.length <10){
+  if(poscode.length <5){
     alert("Your poscode is less than 5 digit.");
   }
-  else if(poscode.length > 11){
+  else if(poscode.length > 5){
     alert("Your poscode is more than 5 digits");
   }  
 }
