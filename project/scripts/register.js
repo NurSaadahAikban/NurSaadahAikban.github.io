@@ -84,7 +84,6 @@ function Register(gname, gemail,gphone,gaddress,gcity,gstate,gposcode){
         let state = document.getElementById("state").value;
         let poscode = document.getElementById("poscode").value;
   
-        Register(name,email,phone,address,city,state,poscode);
-  
+        Register(name,email,phone,address,city,state,poscode);  
       });
     });
