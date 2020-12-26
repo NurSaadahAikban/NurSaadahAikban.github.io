@@ -70,7 +70,7 @@ function Register(gname, gemail,gphone,gaddress,gcity,gstate,gposcode){
     })
     .then((response) => response.json())
     .then(json => {        
-        alert("Congratulation, " + json.member.name + ". You are successfully added in our member list.");        
+        alert("Congratulation, " + json.member.name + ". You are successfully added in our member list.To check your membership details please go to Membership page.");        
       });
   }
   
