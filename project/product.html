@@ -8,45 +8,17 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
     <style>
-
-      header{
-        border-top: 10px solid white;
-        border-bottom: 10px solid white;
-      }
+      
       footer{
         background-color:rgb(231, 231, 152);;
         margin-top: 40px;
       }
       .carousel-item {
-        height: 65vh;
-        min-height: 300px;
-        background-repeat: no-repeat ;        
-        background-attachment: fixed;     
-        }
-        
-      .portfolio-item {
-        margin-bottom: 30px;
-        }
-
-      .align{
-        text-align: right;
-      }
-
-      .container{
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      .row{
-        display: flex;
-        flex-wrap:wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-      }
-
+        height: 30%;;
+        background-repeat: no-repeat ;  
+      }      
+     
       .title,h5,h6{
           font-family: Comic Sans MS;
       }
@@ -84,50 +56,51 @@
         font-weight: bold;
       }
       
+      .carousel{
+        margin-top: 10px;
+      }
+      
       
     </style>
       
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- hv to declare row and col after declare container-->
-        <!--Navbar-->
-        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="product.html">Home </a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="about.html">About </a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="booking.html">Booking Slot </a>
-                    </li>    
-                    <li class="nav-item ">
-                      <a class="nav-link" href="list.html"> Carts </a>
-                    </li>                       
-                    <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Membership
-                      </a>
-                      <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item " href="member.html">Membership</a> 
-                        <a class="dropdown-item " href="register.html">Register Membership</a>                          
-                      </div>
-                    </li>          
-                                    
-                    </form>		                  
-                </div>                
-              </nav>                                     
-          </div>
-      
-    <header>
+  <!--Navigation Bar-->
+  <div class="container-fluid">        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="product.html">Home </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="about.html">About </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="booking.html">Booking Slot </a>
+            </li>    
+            <li class="nav-item ">
+              <a class="nav-link" href="list.html"> Carts </a>
+            </li>                       
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item " href="member.html">Membership</a> 
+                <a class="dropdown-item " href="register.html">Register Membership</a>                          
+              </div>
+            </li>        
+        </div>                
+    </nav>                                     
+  </div>
+    
+  <!--Carousel-->
+  <div class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -156,7 +129,6 @@
             <h5 class="colorr">Delivery is available</h5>            
           </div>
         </div>
-
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -167,200 +139,187 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </header>
-    <!--product folio-->
+  </div>
 
-    <div class="album py-5 bg-light">
-        <div class="container">
-    
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/dQb8c9Z/chocolate-muffin.jpg" class="bd-placeholder-img card-img-tp" 
-                 height="225" >    
-                <div class="card-body">
-                  <h5 class="card-text">Chocolate Chip Muffin</h5>
-                  <h6>RM 2.00</h6>
-                  <p class="quantity">Per Piece</p>
-                </div>
-              </div>
+  <!--product folio-->
+  <div class="album py-5 bg-light">
+    <div class="container">    
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/dQb8c9Z/chocolate-muffin.jpg" class="bd-placeholder-img card-img-tp" 
+            height="225" >    
+            <div class="card-body">
+              <h5 class="card-text">Chocolate Chip Muffin</h5>
+              <h6>RM 2.00</h6>
+              <p class="quantity">Per Piece</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/jD9Q4Sh/funfettimuffin.jpg" class="bd-placeholder-img card-img-tp" 
-                 height="225"   >     
-                <div class="card-body">
-                  <h5 class="card-text">Vanilla Fun Fetti Muffin</h5>
-                  <h6>RM 2.00</h6>
-                  <p class="quantity">Per Piece</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/jD9Q4Sh/funfettimuffin.jpg" class="bd-placeholder-img card-img-tp" 
+            height="225"   >     
+            <div class="card-body">
+              <h5 class="card-text">Vanilla Fun Fetti Muffin</h5>
+              <h6>RM 2.00</h6>
+              <p class="quantity">Per Piece</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/Jcy7vJM/nfd.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" >     
-                <div class="card-body">
-                  <h5 class="card-text">Red Velvet Cupcake</h5>
-                  <h6>RM 2.00</h6>
-                  <p class="quantity">Per Piece</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/Jcy7vJM/nfd.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" >     
+            <div class="card-body">
+              <h5 class="card-text">Red Velvet Cupcake</h5>
+              <h6>RM 2.00</h6>
+              <p class="quantity">Per Piece</p>
             </div>
-    
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/SwNLMnd/oreo-cupcake.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Oreo Cupcake</h5>
-                  <h6>RM 2.00</h6>
-                  <p class="quantity">Per Piece</p>
-                </div>
-              </div>
+          </div>
+        </div>    
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/SwNLMnd/oreo-cupcake.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Oreo Cupcake</h5>
+              <h6>RM 2.00</h6>
+              <p class="quantity">Per Piece</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/zNQLTvK/classic-chocolate-cake.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Classic Chocolate Cake</h5>
-                  <h6>RM 90.00</h6>
-                  <p class="quantity">8" inches</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/zNQLTvK/classic-chocolate-cake.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Classic Chocolate Cake</h5>
+              <h6>RM 90.00</h6>
+              <p class="quantity">8" inches</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/qRyJryn/red-velvet-cake.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text" >Red Velvet Cake</h5>
-                  <h6>RM 90.00</h6>
-                  <p class="quantity">8" inches</p>
-                  
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/qRyJryn/red-velvet-cake.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text" >Red Velvet Cake</h5>
+              <h6>RM 90.00</h6>
+              <p class="quantity">8" inches</p>                  
             </div>
-    
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/Zzq5dKX/egg-tart.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Egg Tarts</h5>
-                  <h6>RM 2.00</h6>
-                  <p class="quantity">Per Piece</p>
-                </div>
-              </div>
+          </div>
+        </div>    
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/Zzq5dKX/egg-tart.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Egg Tarts</h5>
+              <h6>RM 2.00</h6>
+              <p class="quantity">Per Piece</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/2shnQ7x/lemon-tart.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Lemon Tart</h5>
-                  <h6>RM 2.00</h6>
-                  <p class="quantity">Per Piece</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/2shnQ7x/lemon-tart.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Lemon Tart</h5>
+              <h6>RM 2.00</h6>
+              <p class="quantity">Per Piece</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/t3mftL2/dav.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Chocolate Balls Cookies</h5>
-                  <h6>RM 25.00</h6>
-                  <p class="quantity">+-50 pieces</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/t3mftL2/dav.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Chocolate Balls Cookies</h5>
+              <h6>RM 25.00</h6>
+              <p class="quantity">+-50 pieces</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/HYBmDpZ/mde.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Crinkle Red Velvet Cookies</h5>
-                  <h6>RM 27.00</h6>
-                  <p class="quantity">+-50 pieces</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/HYBmDpZ/mde.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Crinkle Red Velvet Cookies</h5>
+              <h6>RM 27.00</h6>
+              <p class="quantity">+-50 pieces</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/QXD7vsf/seri-muka.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Seri Muka Sticky Rice Cake</h5>
-                  <h6>18.00</h6>
-                  <p class="quantity">8" inches</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/QXD7vsf/seri-muka.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Seri Muka Sticky Rice Cake</h5>
+              <h6>18.00</h6>
+              <p class="quantity">8" inches</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/0BY1CFP/kuih-lapis.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Kuih Lapis Cake</h5>
-                  <h6>18.00</h6>
-                  <p class="quantity">8" inches</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/0BY1CFP/kuih-lapis.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Kuih Lapis Cake</h5>
+              <h6>18.00</h6>
+              <p class="quantity">8" inches</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/RSggJy1/boba.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Boba Milk Tea</h5>
-                  <h6>RM 5.00</h6>
-                  <p class="quantity">Regular Cup</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/RSggJy1/boba.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Boba Milk Tea</h5>
+              <h6>RM 5.00</h6>
+              <p class="quantity">Regular Cup</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/9q9q7ZR/coconut-milk-shake.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Coconut Milk Shake </h5>
-                  <h6>RM 4.00</h6>
-                  <p class="quantity">Regular Cup</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/9q9q7ZR/coconut-milk-shake.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Coconut Milk Shake </h5>
+              <h6>RM 4.00</h6>
+              <p class="quantity">Regular Cup</p>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://i.ibb.co/M2WXZFT/coke-float.jpg" class="bd-placeholder-img card-img-tp" 
-                width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
-                <div class="card-body">
-                  <h5 class="card-text">Coke Float </h5>
-                  <h6>RM 3.00</h6>
-                  <p class="quantity">Regular Cup</p>
-
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/M2WXZFT/coke-float.jpg" class="bd-placeholder-img card-img-tp" 
+            width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">     
+            <div class="card-body">
+              <h5 class="card-text">Coke Float </h5>
+              <h6>RM 3.00</h6>
+              <p class="quantity">Regular Cup</p>
             </div>
-            
           </div>
         </div>
       </div>
-      
+    </div>
+  </div>
 
-    <footer class="footer text-faded text-center py-5">
-      <div class="container">
-        <p class="m-0 small">Copyright &copy; NSA Bake Collection 2020</p>
-      </div>
-    </footer>
+  <!--Footer-->
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; NSA Bake Collection 2020</p>
+    </div>
+  </footer>
 
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

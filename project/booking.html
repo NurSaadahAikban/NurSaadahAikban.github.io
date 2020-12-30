@@ -10,166 +10,175 @@
         .btn-primary{
             background-color: rgb(96, 107, 224);
             color:white;
-            margin-top: 40px;
         }
         .btnposition{
             margin: auto;
         }
         .jumbotron{
           background-image: url("https://i.ibb.co/BCMHF9n/b4.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
+          background-repeat:repeat;
+          background-size: contain;
           color: rgb(241, 215, 215);
         }
         .title{
           font-family: Comic Sans MS;
         }
         footer{
-        background-color:rgb(231, 231, 152);;
+        background-color:rgb(231, 231, 152);
         margin-top: 40px;
       }
+      .row{
+        position: relative;
+      }
+
+      .pos{
+        margin-top: 10px;
+      }
+
+      
     </style>
 </head>
 <body>
-  <!--Navigation Bar-->        
-  <div class="row">
-          <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="product.html">Home </a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="about.html">About </a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="booking.html">Booking Slot </a>
-                    </li>    
-                    <li class="nav-item ">
-                      <a class="nav-link" href="list.html"> Carts </a>
-                    </li>                       
-                    <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Membership
-                      </a>
-                      <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item " href="member.html">Membership</a> 
-                        <a class="dropdown-item " href="register.html">Register Membership</a>                          
-                      </div>
-                    </li>         
-                                    
-                    </form>		                  
-                </div>                
-              </nav>                                     
-          </div>
+  <!--Navigation Bar--> 
+  <div class="container-fluid">          
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>              
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="product.html">Home </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="booking.html">Booking Slot </a>
+              </li>    
+              <li class="nav-item ">
+                <a class="nav-link" href="list.html"> Carts </a>
+              </li>                       
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Membership
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item " href="member.html">Membership</a> 
+                  <a class="dropdown-item " href="register.html">Register Membership</a>                          
+                </div>
+              </li>                                             
+          </div>                
+        </nav>                                     
       </div>
-                 
-                  
-        <!--Jumbotron-->
-        <div class="row">
-            <div class="col">
-                <div class="jumbotron" >
-                    <h1 class="display-4">Booking Slot</h1>
-                    <p class="lead">We ready to take slot of booking for any events. 
-                        Please fill up your information below. This will take maximum 2 to 3 days for us to revise your booking slots. We will contact you
-                        as soon as possible. Thank you.
-                    </p>                    
-                </div>
-            </div>
+    </div>  
+  </div>   
+  
+  <!--Main-->
+  <!--Jumbotron-->
+  <div class="container-fluid pos">        
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron" >
+          <h1 class="display-4">Booking Slot</h1>
+          <p class="lead">We ready to take slot of booking for any events. 
+          Please fill up your information below. This will take maximum 2 to 3 days for us to revise your booking slots. We will contact you
+          as soon as possible. Thank you.
+          </p>                    
         </div>
-        <!--Booking form-->
-        <div class="row">
-            <div class="col">                
-              <div class="form-row">                     
-                <div class="form-group col-md-6">
-                  <label for="name">Full Name</label>
-                  <input type="text" class="form-control" id="name" >
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="email">Email</label>
-                  <input type="text" class="form-control" id="email" placeholder="abc@gmail.com">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="home">Home </label>
-                  <input type="text" class="form-control" id="home" placeholder="0312345678">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="mobile">Mobile</label>
-                  <input type="text" class="form-control" id="mobile" placeholder="0123456789">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="address1">Address</label>
-                <input type="text" class="form-control" id="address1" placeholder="Address 1">
-              </div>
-              <div class="form-group">
-                <label for="address2">Address 2</label>
-                <input type="text" class="form-control" id="address2" placeholder="Address 2">
-              </div>
-             
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="city">City</label>
-                  <input type="text" class="form-control" id="city" >
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="state">State</label>
-                  <input type="text" class="form-control" id="state">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="poscode">Poscode</label>
-                  <input type="text" class="form-control" id="poscode">
-              </div>
-              
-                <div class="form-group col-md-4">
-                  <label for="pname">Product Name</label>
-                  <select id="pname" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Chocolate Chip Muffin</option>
-                    <option>Vanilla Fun Fetti Muffin</option>
-                    <option>Red Velvet Cupcake</option>
-                    <option>Oreo Cupcake</option>
-                    <option>Red Velvet Cake</option>
-                    <option>Classic Chocolate Cake</option>
-                    <option>Eggs Tart</option>
-                    <option>Lemon Tart</option>
-                    <option>Chocolate Balls Cookies</option>
-                    <option>Crinkle Red Velvet Cookies</option>
-                    <option>Seri Muka Sticky Rice Cake</option>
-                    <option>Kuih Lapis Cake</option>
-                    <option>Boba Milk Tea</option>
-                    <option>Coconut Milk Shake</option>
-                    <option>Coke Float</option>                          
-                  </select>
-                </div>
-                
-                <div class="form-group col-md-4">
-                  <label for="quantity">Quantity</label>
-                  <input type="text" class="form-control" id="quantity">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="datetosend">Date to send</label>
-                  <input type="text" class="form-control" id="datetosend" placeholder="Please put date should we send the order e.g:15-12-2020">
-                </div>              
-                <div class="form-group" style="width:100%;">
-                  <label for="notes">Additional Information</label>
-                  <textarea class="form-control" id="notes" rows="3" placeholder="Let us know your details requirements on your orders. We're ready to hear your voice."></textarea>
-                </div>
-                  
-            
-              <div class="btnposition">
+      </div>
+    </div>
+  </div>
+
+  <!--Booking form-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">                
+        <div class="form-row">                     
+          <div class="form-group col-md-6">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" >
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="abc@gmail.com">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="home">Home </label>
+            <input type="text" class="form-control" id="home" placeholder="0312345678">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="mobile">Mobile</label>
+            <input type="text" class="form-control" id="mobile" placeholder="0123456789">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="address1">Address</label>
+            <input type="text" class="form-control" id="address1" placeholder="Address 1">
+          </div>
+          <div class="form-group">
+            <label for="address2">Address 2</label>
+            <input type="text" class="form-control" id="address2" placeholder="Address 2">
+          </div>             
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" >
+            </div>
+            <div class="form-group col-md-4">
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="poscode">Poscode</label>
+              <input type="text" class="form-control" id="poscode">
+            </div>              
+            <div class="form-group col-md-4">
+              <label for="pname">Product Name</label>
+              <select id="pname" class="form-control">
+                <option selected>Choose...</option>
+                <option>Chocolate Chip Muffin</option>
+                <option>Vanilla Fun Fetti Muffin</option>
+                <option>Red Velvet Cupcake</option>
+                <option>Oreo Cupcake</option>
+                <option>Red Velvet Cake</option>
+                <option>Classic Chocolate Cake</option>
+                <option>Eggs Tart</option>
+                <option>Lemon Tart</option>
+                <option>Chocolate Balls Cookies</option>
+                <option>Crinkle Red Velvet Cookies</option>
+                <option>Seri Muka Sticky Rice Cake</option>
+                <option>Kuih Lapis Cake</option>
+                <option>Boba Milk Tea</option>
+                <option>Coconut Milk Shake</option>
+                <option>Coke Float</option>                          
+              </select>
+            </div>                
+            <div class="form-group col-md-4">
+              <label for="quantity">Quantity</label>
+              <input type="text" class="form-control" id="quantity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="datetosend">Date to send</label>
+              <input type="text" class="form-control" id="datetosend" placeholder="Please put date should we send the order e.g:15-12-2020">
+            </div>              
+            <div class="form-group" style="width:100%;">
+              <label for="notes">Additional Information</label>
+              <textarea class="form-control" id="notes" rows="3" placeholder="Let us know your details requirements on your orders. We're ready to hear your voice."></textarea>
+            </div>   
+            <div class="btnposition">
               <button type="reset" class="btn btn-primary"  >Reset</button>
               <button type="submit" class="btn btn-primary" id="bookNow" >Submit</button>
-              </div>
             </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+    
+    <!--Footer-->
     <footer class="footer text-faded text-center py-5">
       <div class="container">
         <p class="m-0 small">Copyright &copy; NSA Bake Collection 2020</p>
