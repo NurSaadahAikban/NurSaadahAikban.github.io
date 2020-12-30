@@ -47,6 +47,15 @@ function GetBookings(){
     }); 
 }
 
+/*for(let y=0;y< json.collections.length; y++){  
+  if(json.bookings[x].flavour == json.collections[y].pname){
+    price = json.collections[y].pprice;
+  } 
+  else{
+    alert(json.booking[x].flavour + " is not in our list product.");
+  }
+}
+*/
 window.addEventListener("load", function(){
     document.getElementById("refreshList").addEventListener("click", function(){
         GetBookings();
