@@ -15,8 +15,6 @@
 
         footer{
         background-color:rgb(231, 231, 152);
-        margin:auto;
-        
       }
 
         .section-heading-upper {
@@ -45,75 +43,84 @@
           margin-bottom: 15px;
           margin-right: 15px;
         }
+        table{
+          position: relative;
+          margin: auto;
+        }
 
     </style>
 </head>
 <body>
   <!--Navigation Bar-->    
-        <div class="row">
-          <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="product.html">Home </a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="about.html">About </a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="booking.html">Booking Slot </a>
-                    </li>    
-                    <li class="nav-item ">
-                      <a class="nav-link" href="list.html"> Carts </a>
-                    </li>                       
-                    <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Membership
-                      </a>
-                      <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item " href="member.html">Membership</a> 
-                        <a class="dropdown-item " href="register.html">Register Membership</a>                          
-                      </div>
-                    </li> 
-                </div>                
-              </nav>    
-              </div>                                 
-          </div>
-      <div class="container">
-        <table>
-          <tr>
-            <td>
-              <img src="https://i.ibb.co/wBHfnjS/a7f1dd90758b01dc09f0197a98a69aac.jpg" class="rounded float-start">
-            </td>
-            <td>
-              <div class="bg-faded rounded p-5 ">
-                <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Simple, Fresh, & Tasty</span>
-                  <span class="section-heading-lower">About Us</span>
-                  </h2>
-                  <p>Founded in 2019 by the Nur Saadah Aikban, our establishment has been serving up traditional & modern desserts sourced from expert bakers. We are dedicated to travelling the world, finding the best tasty food from vary countries, and bringing back to you here with halal version in our bake collections .</p>
-                  <p class="mb-0">We guarantee that you will fall in <em>lust</em> with our products the moment you taste it until you finish. </p>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <footer class="footer text-faded text-center py-5">
-        <div class="container">
-          <p class="m-0 small">Copyright &copy; NSA Bake Collection 2020</p>
+  <div class="row">
+    <div class="col">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand title" href="product.html">NSA Bake Collections</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>              
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="product.html">Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="booking.html">Booking Slot </a>
+              </li>    
+              <li class="nav-item ">
+                <a class="nav-link" href="list.html"> Carts </a>
+              </li>                       
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Membership
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item " href="member.html">Membership</a> 
+                  <a class="dropdown-item " href="register.html">Register Membership</a>                          
+                </div>
+              </li> 
+          </div>                
+      </nav>    
+    </div>                                 
+  </div>
+
+  <!--Main Body-->
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <img src="https://i.ibb.co/wBHfnjS/a7f1dd90758b01dc09f0197a98a69aac.jpg" class="rounded float-start">
+        </td>
+        <td>
+        <div class="bg-faded rounded p-2">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Simple, Fresh, & Tasty</span>
+            <span class="section-heading-lower">About Us</span>
+          </h2>
+          <p>Founded in 2019 by the Nur Saadah Aikban, our establishment has been serving up traditional & modern desserts sourced from expert bakers. We are dedicated to travelling the world, finding the best tasty food from vary countries, and bringing back to you here with halal version in our bake collections .</p>
+          <p class="mb-0">We guarantee that you will fall in <em>lust</em> with our products the moment you taste it until you finish. </p>
         </div>
-      </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; NSA Bake Collection 2020</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
 </html>
        
