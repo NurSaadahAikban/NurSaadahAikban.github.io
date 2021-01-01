@@ -8,7 +8,6 @@ function GetMember(){
       // Do something with the data
       //console.log(json.bookings);
       let memberList = document.getElementById("memberList");
-      
         
         for(let x=0; x<json.members.length;x++){          
             let userinfo = "Membership Id: "+json.members[x].id + "<br>Name: " + json.members[x].name + 
@@ -18,13 +17,14 @@ function GetMember(){
             let row = memberList.insertRow(memberList.rows.length);
 
             //specify what to put in cell
-            row.insertCell(0).innerHTML = userinfo;
+              row.insertCell(0).innerHTML = userinfo;
+            
         }      
     }); 
 }
 
 window.addEventListener("load", function(){
     document.getElementById("membership").addEventListener("click", function(){
-      GetMember();
+      GetMember();       
     });    
 })

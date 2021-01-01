@@ -37,40 +37,38 @@
     </style>
    
     <script type="text/javascript">
-      function getPrice(gprice){
+      function getPrice(){
+          var pname = document.getElementById("pname").value;
+          var pprice = document.getElementById("pprice").value;
+          var quantity = document.getElementById("quantity").value;
 
-        var pname = document.getElementById("pname").value;
-        var quantity = document.getElementById("quantity").value;
-        var pprice = document.getElementById("pprice").value;
+          if(pname=="Chocolate Chip Muffin" || pname=="Vanilla Fun Fetti Muffin" ||
+            pname=="Red Velvet Cupcake" || pname=="Oreo Cupcake" ||
+            pname=="Eggs Tart" || pname=="Lemon Tart" ){
+              pprice = 2.00  * quantity;
+            }
+            else if(pname=="Red Velvet Cake" || pname=="Classic Chocolate Cake"){
+              pprice = 90.00  * quantity;
+            }
+            else if(pname=="Chocolate Balls Cookies" || pname=="Crinkle Red Velvet Cookies"){
+              pprice = 25.00  * quantity;
+            }
+            else if(pname=="Seri Muka Sticky Rice Cake" || pname=="Kuih Lapis Cake"){
+              pprice = 18.00  * quantity;
+            }
+            else if(pname=="Boba Milk Tea"){
+              pprice = 5.00 * quantity;
+            }
+            else if(pname=="Coconut Milk Shake"){
+              pprice = 4.00* quantity;
+            }
+            else if(pname=="Coke Float"){
+              pprice = 3.00* quantity;
+            }          
 
-        if(pname=="Chocolate Chip Muffin" || pname=="Vanilla Fun Fetti Muffin" ||
-          pname=="Red Velvet Cupcake" || pname=="Oreo Cupcake" ||
-          pname=="Eggs Tart" || pname=="Lemon Tart" ){
-            pprice = 2.00  * quantity;
-          }
-          else if(pname=="Red Velvet Cake" || pname=="Classic Chocolate Cake"){
-            pprice = 90.00  * quantity;
-          }
-          else if(pname=="Chocolate Balls Cookies" || pname=="Crinkle Red Velvet Cookies"){
-            pprice = 25.00  * quantity;
-          }
-          else if(pname=="Seri Muka Sticky Rice Cake" || pname=="Kuih Lapis Cake"){
-            pprice = 18.00  * quantity;
-          }
-          else if(pname=="Boba Milk Tea"){
-            pprice = 5.00 * quantity;
-          }
-          else if(pname=="Coconut Milk Shake"){
-            pprice = 4.00* quantity;
-          }
-          else if(pname=="Coke Float"){
-            pprice = 3.00* quantity;
-          }          
-
-          document.getElementById("pprice").innerHTML ="RM "+ pprice ;
+            return document.getElementById("pprice").innerHTML ="RM "+ pprice ;
       }
-
-      
+           
     </script>
  
 </head>
@@ -194,13 +192,13 @@
               </select>
             </div>                
             <div class="form-group col-md-4">
-              <label for="quantity">Quantity</label>
+              <label for="quantity">quantity</label>
               <input type="text" class="form-control" id="quantity">
             </div>
             <div class="form-group col-md-2">
               <label for="pprice">Price</label>
-              <input type="button" class="form-control btn btn-primary" onclick="getPrice()" value="Get Price"/>
-              <p class="form-control text-center" id="pprice"></p>                
+              <input type="button" class="form-control btn btn-primary" onclick="getPrice()" value="Click Me">
+              <textarea class="form-control text-center" id="pprice"></textarea>              
               
             </div>  
             <div class="form-group col-md-2">
