@@ -34,9 +34,45 @@
       .pos{
         margin-top: 10px;
       }
+    </style>
+   
+    <script type="text/javascript">
+      function getPrice(gprice){
+
+        var pname = document.getElementById("pname").value;
+        var quantity = document.getElementById("quantity").value;
+        var pprice = document.getElementById("pprice").value;
+
+        if(pname=="Chocolate Chip Muffin" || pname=="Vanilla Fun Fetti Muffin" ||
+          pname=="Red Velvet Cupcake" || pname=="Oreo Cupcake" ||
+          pname=="Eggs Tart" || pname=="Lemon Tart" ){
+            pprice = 2.00  * quantity;
+          }
+          else if(pname=="Red Velvet Cake" || pname=="Classic Chocolate Cake"){
+            pprice = 90.00  * quantity;
+          }
+          else if(pname=="Chocolate Balls Cookies" || pname=="Crinkle Red Velvet Cookies"){
+            pprice = 25.00  * quantity;
+          }
+          else if(pname=="Seri Muka Sticky Rice Cake" || pname=="Kuih Lapis Cake"){
+            pprice = 18.00  * quantity;
+          }
+          else if(pname=="Boba Milk Tea"){
+            pprice = 5.00 * quantity;
+          }
+          else if(pname=="Coconut Milk Shake"){
+            pprice = 4.00* quantity;
+          }
+          else if(pname=="Coke Float"){
+            pprice = 3.00* quantity;
+          }          
+
+          document.getElementById("pprice").innerHTML ="RM "+ pprice ;
+      }
 
       
-    </style>
+    </script>
+ 
 </head>
 <body>
   <!--Navigation Bar--> 
@@ -161,7 +197,13 @@
               <label for="quantity">Quantity</label>
               <input type="text" class="form-control" id="quantity">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-2">
+              <label for="pprice">Price</label>
+              <input type="button" class="form-control btn btn-primary" onclick="getPrice()" value="Get Price"/>
+              <p class="form-control text-center" id="pprice"></p>                
+              
+            </div>  
+            <div class="form-group col-md-2">
               <label for="datetosend">Date to send</label>
               <input type="text" class="form-control" id="datetosend" placeholder="Please put date should we send the order e.g:15-12-2020">
             </div>              
